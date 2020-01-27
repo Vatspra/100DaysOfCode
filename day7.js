@@ -40,11 +40,13 @@ var mergeTwoLists = function(l1, l2) {
     
     while(l1 !== null) {
         newList.next = l1;
-        l1 = l1.next
+        l1 = l1.next;
+	newList = newList.next;
     }
     while(l2 !== null) {
         newList.next = l2;
-        l2 = l2.next
+        l2 = l2.next;
+	newList = newList.next;
     }
     
     return head.next
